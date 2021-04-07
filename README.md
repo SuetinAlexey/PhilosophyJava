@@ -1,2 +1,2 @@
-# PhilosophyJava
-Примеры по книге Философия Java
+pJava
+Примеры по книге pJava
