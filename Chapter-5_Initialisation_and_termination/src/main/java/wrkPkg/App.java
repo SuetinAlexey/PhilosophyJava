@@ -1,18 +1,27 @@
 package wrkPkg;
 
-import java.util.ArrayList;
-import java.util.List;
+
+class Person {
+    public void eat(Apple aplle) {
+        Apple peeled = aplle.getPeeled();
+        System.out.println("Yummy");
+    }
+}
+
+class Peller {
+    static Apple peel(Apple apple) {
+        return apple;
+    }
+}
+
+class Apple {
+    Apple getPeeled(){
+        return Peller.peel(this);
+    }
+}
 
 public class App {
-    public static void main(String[] args){
-        List<String> items = new ArrayList<>();
-        items.add("Hello");
-        items.add(" ");
-        items.add("World");
-        items.add("!");
-        StringBuilder sb = new StringBuilder();
-        items.forEach(s -> sb.append(s));
-        System.out.println(sb.toString());
+    public static void main(String[] args) {
+        new Person().eat(new Apple());
     }
-
 }
