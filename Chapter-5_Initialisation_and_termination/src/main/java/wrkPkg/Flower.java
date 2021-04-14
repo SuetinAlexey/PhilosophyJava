@@ -2,6 +2,8 @@ package wrkPkg;
 
 import org.omg.Messaging.SyncScopeHelper;
 
+// Вызов конструкторов из конструкторов.
+
 public class Flower {
     int petalCount = 0;
     String s = "initial value";
