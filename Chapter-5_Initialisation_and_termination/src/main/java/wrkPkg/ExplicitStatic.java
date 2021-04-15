@@ -26,5 +26,6 @@ public class ExplicitStatic {
         System.out.println("Insaid main()");
         Cups.Cup1.f(99);
     }
+    static Cups cups1 = new Cups();
 
 }
