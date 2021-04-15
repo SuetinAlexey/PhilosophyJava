@@ -20,11 +20,12 @@ class House {
     void f() {
         System.out.println("f()");
     }
-    Window w3 = new Window(33);
+    Window w3 = new Window(33); // В конце
 }
 
-
-
-
 public class OrderOfInitialization {
+    public static void maim(String[] args){
+        House h = new House();
+        h.f(); //
+    }
 }
