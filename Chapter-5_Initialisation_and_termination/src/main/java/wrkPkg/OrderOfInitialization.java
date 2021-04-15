@@ -24,8 +24,8 @@ class House {
 }
 
 public class OrderOfInitialization {
-    public static void maim(String[] args){
+    public static void main(String[] args){
         House h = new House();
-        h.f(); //
+        h.f(); // Показывает, что объект сконструирован.
     }
 }
