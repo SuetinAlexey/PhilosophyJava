@@ -42,7 +42,7 @@ public class StaticInitialization {
         System.out.println("Создание нового объекта CupBoard в main()");
         new CupBoard();
         table.f2(1);
-        cupboard.f3(1);
+        cupBoard.f3(1);
     }
     static Table table = new Table();
     static CupBoard cupBoard = new CupBoard();
