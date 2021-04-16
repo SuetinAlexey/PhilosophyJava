@@ -19,7 +19,8 @@
 
     <modules>
         <module>Chapter-5_Initialisation_and_termination</module>
-     </modules>
+        <module>Chapter-6_Access_control</module>
+    </modules>
 
     <properties>
 
