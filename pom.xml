@@ -20,6 +20,7 @@
     <modules>
         <module>Chapter-5_Initialisation_and_termination</module>
         <module>Chapter-6_Access_control</module>
+        <module>Chapter-7_Reusing_classes</module>
     </modules>
 
     <properties>
