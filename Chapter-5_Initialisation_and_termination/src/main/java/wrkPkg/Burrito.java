@@ -1,6 +1,6 @@
 package wrkPkg;
 
-public enum Speciness {
+enum Speciness {
     NOT, MILD, MEDIUM, HOT, FLAMING
 }
 
