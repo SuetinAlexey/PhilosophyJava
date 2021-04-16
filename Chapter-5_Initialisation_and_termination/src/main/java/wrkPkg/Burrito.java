@@ -26,7 +26,7 @@ public static void main(String[] args) {
     Burrito
     plain = new Burrito(Speciness.NOT),
     greenChile = new Burrito(Speciness.MEDIUM),
-    jalapeno = new Burrito((Speciness.HOT);
+    jalapeno = new Burrito(Speciness.HOT);
     plain.describe();
     greenChile.describe();
     jalapeno.describe();
