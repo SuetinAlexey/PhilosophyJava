@@ -22,7 +22,7 @@ public class Detergent extends Cleanser {
         append("Detergent.scrub()");
         super.scrub(); // вызываем метод базового класса
     }
-    // добавядем новые методы к интерфейсу
+    // добавляем новые методы к интерфейсу
     public void foam() { append(" foam()");}
     // проверяем новый класс:
     public static void main(String[] args){
@@ -35,5 +35,4 @@ public class Detergent extends Cleanser {
         System.out.println("Проверяем базовый класс");
         Cleanser.main(args);
     }
-
 }
