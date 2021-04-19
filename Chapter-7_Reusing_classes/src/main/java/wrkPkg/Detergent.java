@@ -16,6 +16,24 @@ class Cleanser{
     }
 }
 
+public class Detergent extends Cleanser {
+    // изменяем метод
+    public void scrub() {
+        append("Detergent.scrub()");
+        super.scrub(); // вызываем метод базового класса
+    }
+    // добавядем новые методы к интерфейсу
+    public void foam() { append(" foam()");}
+    // проверяем новый класс:
+    public static void main(String[] args){
+        Detergent x = new Detergent();
+        x.dilute();
+        x.apply();
+        x.scrub();
+        x.foam();
+        System.out.println(x);
+        System.out.println("Проверяем базовый класс");
+        Cleanser.main(args);
+    }
 
-public class Detergent {
 }
