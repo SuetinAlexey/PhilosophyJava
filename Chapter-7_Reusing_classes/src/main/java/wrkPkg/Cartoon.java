@@ -14,7 +14,7 @@ class Drawing extends Art {
     }
 }
 
-public class Cartoon {
+public class Cartoon extends Drawing {
     public Cartoon() {
         System.out.println("Конструктор Cartoon");
     }
