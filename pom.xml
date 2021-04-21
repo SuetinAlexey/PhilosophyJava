@@ -21,6 +21,7 @@
         <module>Chapter-5_Initialisation_and_termination</module>
         <module>Chapter-6_Access_control</module>
         <module>Chapter-7_Reusing_classes</module>
+        <module>Chapter-8_Polymorphism</module>
     </modules>
 
     <properties>
