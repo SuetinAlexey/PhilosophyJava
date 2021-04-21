@@ -6,7 +6,7 @@ enum  Note {
 
 class Instrument{
     public void play(Note n) {
-        System.out.println("wrkPkg.Instrument.play()");
+        System.out.println("Instrument.play()");
     }
 }
 
@@ -14,7 +14,7 @@ class Instrument{
 // поскольку имеют тот же интерфейс:
 class Wind extends Instrument {
     public void play(Note n){
-        System.out.println("wrkPkg.Wind.play() " + n);
+        System.out.println("Wind.play() " + n);
     }
 }
 
