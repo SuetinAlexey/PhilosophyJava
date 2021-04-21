@@ -21,7 +21,7 @@ public class Beetle extends Insect {
         System.out.println("j = " + j);
     }
     private static int x2 = printInit("Поле wrkPkg.Beetle.x2 инициализировано.");
-    public static void main(String args) {
+    public static void main(String[] args) {
         System.out.println("Конструктор Beatle");
         Beetle beetle = new Beetle();
     }
