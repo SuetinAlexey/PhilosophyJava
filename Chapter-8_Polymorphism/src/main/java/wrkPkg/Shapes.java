@@ -34,7 +34,7 @@ class Triangle extends Shape{
     }
 }
 
-class RandomShapeGenerator(){
+class RandomShapeGenerator {
     private Random rand = new Random(47);
     public Shape next() {
         switch (rand.nextInt(3)){
