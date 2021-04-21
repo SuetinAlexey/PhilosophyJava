@@ -1,18 +1,20 @@
+package wrkPkg;
+
 enum  Note {
     MIDDLE_C, C_SHARP, B_FLAT;
 }
 
 class Instrument{
     public void play(Note n) {
-        System.out.println("Instrument.play()");
+        System.out.println("wrkPkg.Instrument.play()");
     }
 }
 
-// объекты Wind также являются объектами Instrument,
+// объекты wrkPkg.Wind также являются объектами wrkPkg.Instrument,
 // поскольку имеют тот же интерфейс:
 class Wind extends Instrument {
     public void play(Note n){
-        System.out.println("Wind.play() " + n);
+        System.out.println("wrkPkg.Wind.play() " + n);
     }
 }
 
