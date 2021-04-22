@@ -44,6 +44,7 @@ public class Sandwich {
         System.out.println("Sandwich()");
     }
     public static void main(String[] args) {
+        PortableLunch portableLunch = new PortableLunch();
         new Sandwich();
     }
 }
