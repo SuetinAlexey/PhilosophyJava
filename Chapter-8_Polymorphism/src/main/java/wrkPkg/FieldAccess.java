@@ -23,6 +23,6 @@ public class FieldAccess {
         System.out.println("sup.field = " + sup.field + ", sup.GetField = " + sup.getField());
         Sub sub = new Sub();
         System.out.println("sub.field = " + sub.field + ", sub.GetField = " + sub.getField() +
-                "sub.getSupperField()" + sub.getSupperField());
+                ", sub.getSupperField() = " + sub.getSupperField());
     }
 }
