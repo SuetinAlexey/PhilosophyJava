@@ -19,7 +19,6 @@ public class RTTI {
         Useful[] x = {
                 new Useful(),
                 new MoreUseful()};
-
         x[0].f();
         x[1].g();
         //x[1].u(); метод не найден в классе Useful
