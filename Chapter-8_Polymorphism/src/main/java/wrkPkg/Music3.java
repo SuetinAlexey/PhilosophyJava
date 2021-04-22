@@ -22,5 +22,30 @@ class Woodwind extends Wind {
 }
 
 public class Music3 {
+    // работа метода не зависит от фактического типа объекта
+    // поэтому типы, доставленные в систему, будут работать правильно
+    public static void tune(Instrument i){
+        //
+        i.play(Note.MIDDLE_C);
+    }
+    public static void tuneAll(Instrument[] e){
+        for (Instrument i : e)
+            tune(i);
+    }
+
+    public static void main(String[] args){
+        // восходящее преобразование при добавлении в массив:
+        Instrument[] orchestra = {
+                new Wind(),
+                new Percussion(),
+                new Stringed(),
+                new Brass(),
+                new Woodwind()
+        };
+        tuneAll(orchestra);
+    }
+
+
+
 
 }
