@@ -33,5 +33,4 @@ public class Transmogrify {
         stage.change();
         stage.performPlay();
     }
-
 }
