@@ -25,7 +25,6 @@ public class Music3 {
     // работа метода не зависит от фактического типа объекта
     // поэтому типы, доставленные в систему, будут работать правильно
     public static void tune(Instrument i){
-        //
         i.play(Note.MIDDLE_C);
     }
     public static void tuneAll(Instrument[] e){
