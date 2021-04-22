@@ -5,16 +5,28 @@ enum  Note {
 }
 
 class Instrument{
-    public void play(Note n) {
-        System.out.println("Instrument.play()");
+    void play(Note n) {
+        System.out.println("Instrument.play()" + n);
+    }
+    String what() {
+        return "Instrument";
+    }
+    void adjust() {
+        System.out.println("Adjusting Instrument");
     }
 }
 
 // объекты wrkPkg.Wind также являются объектами wrkPkg.Instrument,
 // поскольку имеют тот же интерфейс:
 class Wind extends Instrument {
-    public void play(Note n){
+    void play(Note n){
         System.out.println("Wind.play() " + n);
+    }
+    String what() {
+        return "Wind";
+    }
+    void adjust() {
+        System.out.println("Adjusting Wind");
     }
 }
 
