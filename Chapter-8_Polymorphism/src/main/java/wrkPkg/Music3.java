@@ -44,8 +44,4 @@ public class Music3 {
         };
         tuneAll(orchestra);
     }
-
-
-
-
 }
