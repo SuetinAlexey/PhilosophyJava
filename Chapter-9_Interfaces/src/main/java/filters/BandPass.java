@@ -6,4 +6,7 @@ public class BandPass extends Filter {
         lowCutoff = lowCut;
         highCutoff = highCut;
     }
+    public Waveform process(Waveform input) {
+        return input;
+    }
 }
