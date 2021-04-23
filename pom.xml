@@ -22,6 +22,7 @@
         <module>Chapter-6_Access_control</module>
         <module>Chapter-7_Reusing_classes</module>
         <module>Chapter-8_Polymorphism</module>
+        <module>Chapter-9_Interfaces</module>
     </modules>
 
     <properties>
