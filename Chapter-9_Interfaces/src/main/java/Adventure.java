@@ -1,3 +1,5 @@
+//Использование нескольких интерфейсов.
+
 interface CanFight{
     void fight();
 }
