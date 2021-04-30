@@ -82,6 +82,11 @@ public class NestingInterfaces{
         // A.D ad = a.getD();
         // не возвращает ничего, кроме A.D
         // A.DImp2 di2 = a.getD();
+        // нельзя получить доступ к члену интерфейса
+        // a.getD().f();
+        // Только другой класс А может использовать GetD()
+        A a2 = new A();
+        a2.receiveD(a.GetD());
     }
 
 
