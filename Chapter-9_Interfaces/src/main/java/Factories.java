@@ -1,3 +1,5 @@
+// Паттерн "Фабричный метод"
+
 interface Service {
     void method1();
     void method2();
