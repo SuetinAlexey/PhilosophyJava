@@ -16,5 +16,6 @@ public class Parcel5 {
     public static void main(String[] args){
         Parcel5 p = new Parcel5();
         Destination destination = p.destination("Танзания");
+        System.out.println(destination.readLabel());
     }
 }
