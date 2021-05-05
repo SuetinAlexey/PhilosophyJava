@@ -29,5 +29,7 @@ public class TestParcel {
         Destination d = p.destination("Танзания");
         //обращение к закрытому класу невозможно
         //Parcel4.PContents pc = p.new PContents();
+        System.out.println(d.readLabel());
+        System.out.println(c.value());
     }
 }
