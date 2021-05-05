@@ -13,7 +13,7 @@ class Implementation1 implements Service {
         System.out.println("Implementation1 method1");
     }
     public void method2(){
-        System.out.println("Implementation1. method2");
+        System.out.println("Implementation1 method2");
     }
 }
 
