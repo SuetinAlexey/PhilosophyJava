@@ -1,8 +1,6 @@
 // Ссылка на внешний класс
 // Хранение последовательности Object
 
-import java.util.jar.JarEntry;
-
 interface Selector {
     boolean end();
     Object current();
