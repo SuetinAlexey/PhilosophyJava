@@ -18,4 +18,9 @@ public class Parcel10 {
             }
         };
     }
+    public static void main(String[] args) {
+        Parcel10 p = new Parcel10();
+        Destination d = p.destination("Танзания", 101.395F);
+        System.out.println(d.readLabel());
+    }
 }
