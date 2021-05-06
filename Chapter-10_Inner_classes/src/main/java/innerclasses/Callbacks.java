@@ -6,7 +6,7 @@ interface Incrementable{
 
 // просто реализуем интерфейс
 class Callee1 implements Incrementable{
-    private int i = 0;
+    private int i = 10;
     public void increment() {
         i++;
         System.out.println(i);
@@ -25,9 +25,9 @@ class MyIncrement{
 // Если ваш класс должен вызывать метод increment()
 // по-другому> необходимо использовать внутренний класс:
 class Callee2 extends MyIncrement{
-    private int i = 0;
+    private int i = 20;
     public void increment(){
-        super.increment();  // increment() - родительского класса "MyIncrement"
+        super.increment();  // increment() - родительского класса "MyIncrement" Пишет "Другая операция"
         i++;
         System.out.println(i);
     }
