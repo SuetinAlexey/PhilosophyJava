@@ -1,4 +1,5 @@
 public class Parcel11 {
+
     private static class ParcelContents implements Contents{
         private int i = 11;
         public int value(){
@@ -21,7 +22,7 @@ public class Parcel11 {
             static int x = 12;
         }
     }
-    public static Destination destination(String s) {
+    public static ParcelDestination destination(String s) {
         return new ParcelDestination(s);
     }
     public static Contents contents() {
@@ -29,6 +30,8 @@ public class Parcel11 {
     }
     public static void main (String[] args){
         Contents c = contents();
-        Destination d = destination("Танзания");
+        ParcelDestination d = destination("Танзания");
+        System.out.println(d.readLabel());
+        System.out.println(c.value());
     }
 }
