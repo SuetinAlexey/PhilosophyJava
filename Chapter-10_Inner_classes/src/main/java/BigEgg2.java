@@ -35,7 +35,7 @@ public class BigEgg2 extends Egg2 {
     }
     public static void main(String[] args){
         Egg2 e2 = new BigEgg2();
-       // Egg2.g();
+        e2.g();
     }
 
 }
