@@ -48,6 +48,20 @@ public class GreenhouseControls extends Controller{
             return "Полив включен";
         }
     }
+
+    public class WaterOff extends Event{
+        public WaterOff(long delayTime) {
+            super(delayTime);
+        }
+        public void action(){
+            // Здесь размещается код управления оборудованием
+            water = true;
+        }
+        public String toString(){
+            return "Полив отключен";
+        }
+    }
+
     private String thermostat = "День";
     public class ThermostatNight extends Event{
         public ThermostatNight(long delayTime){
