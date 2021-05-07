@@ -104,11 +104,11 @@ public class GreenhouseControls extends Controller{
         public Restart(long delayTime, Event[] eventList) {
             super(delayTime);
             this.eventList = eventList;
-            for (Event e :eventList)
+            for (Event e : this.eventList)
                 addEvent(e);
         }
         public void action(){
-            for (Event e : eventList){
+            for (Event e : this.eventList){
                 e.start();
                 addEvent(e);
             }
