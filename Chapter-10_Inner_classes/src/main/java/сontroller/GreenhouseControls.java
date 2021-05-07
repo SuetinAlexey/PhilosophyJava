@@ -108,10 +108,14 @@ public class GreenhouseControls extends Controller{
                 addEvent(e);
         }
         public void action(){
+
             for (Event e : this.eventList){
-                e.start();
+                e.start(); // перезапуск каждого события
                 addEvent(e);
             }
+            start(); // перезапуск текущего события
+            addEvent(this);
+
         }
         public String toString(){
             return "Перезапуск системы";

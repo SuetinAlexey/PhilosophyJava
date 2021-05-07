@@ -8,7 +8,7 @@ public abstract class Event {
         start();
     }
     public void start(){ // с возможностью перезапуска
-        eventTime = System.nanoTime() + delayTime;
+        eventTime = System.nanoTime() + this.delayTime;
     }
     public boolean ready(){
         return System.nanoTime() >= eventTime;
