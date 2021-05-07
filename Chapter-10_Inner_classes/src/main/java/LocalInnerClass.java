@@ -14,7 +14,7 @@ public class LocalInnerClass {
                 System.out.println("LocalCounter()");
             }
             public int next(){
-                System.out.println(name); // неизменный аргумент
+                System.out.print(name); // неизменный аргумент
                 return count++;
             }
         }
@@ -30,7 +30,7 @@ public class LocalInnerClass {
             }
             @Override
             public int next() {
-                System.out.println(name); // неизменный аргумент
+                System.out.print(name); // неизменный аргумент
                 return count++;
             }
         };
@@ -38,8 +38,8 @@ public class LocalInnerClass {
     public static void main(String[] args) {
         LocalInnerClass lic = new LocalInnerClass();
         Counter
-                c1 = lic.getCounter("Локальный"),
-                c2 = lic.getCounter2("Анонимный");
+                c1 = lic.getCounter("Локальный "),
+                c2 = lic.getCounter2("Анонимный ");
         for (int i = 0; i < 5; i++)
             System.out.println(c1.next());
         for (int i=0; i<5; i++)
