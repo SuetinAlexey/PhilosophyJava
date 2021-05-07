@@ -22,6 +22,6 @@ public class BigEgg extends Egg {
     }
     public static void main(String[] args){
         BigEgg bigEgg = new BigEgg();
-        BigEgg.Yolk by = bigEgg.new Yolk();
+        BigEgg.Yolk by = bigEgg.new Yolk(); // явно вызвал конструктор BigEgg.Yolk()
     }
 }
