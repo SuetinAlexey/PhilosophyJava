@@ -20,18 +20,21 @@ public class GreenhouseControls extends Controller{
             return "Свет включен";
         }
     }
-    public class LightOff extends Event{
+    public class LightOff extends Event {
         public LightOff(long delayTime) {
             super(delayTime);
         }
-        public void action(){
+
+        public void action() {
             // Поместите сюда код управления оборудованием
             // выполняющий выключение света
             light = false;
         }
-        public String toString(){
+
+        public String toString() {
             return "Свет выключен";
         }
+    }
     private boolean water = false;
     public class WaterOn extends Event{
         public WaterOn(long delayTime) {
@@ -45,10 +48,70 @@ public class GreenhouseControls extends Controller{
             return "Полив включен";
         }
     }
-
-
+    private String thermostat = "День";
+    public class ThermostatNight extends Event{
+        public ThermostatNight(long delayTime){
+            super(delayTime);
+        }
+        public void action(){
+            // здесь размещается код управления оборудованием
+            thermostat = "Ночь";
+        }
+        public String toString(){
+            return "Термостат использует ночной режим";
+        }
     }
-
-
-
+    public class ThetmostatDay extends Event{
+        public ThetmostatDay(long delayTime){
+            super(delayTime);
+        }
+        public void action(){
+            // здесь размещается код управления оборудованием
+            thermostat = "День";
+        }
+        public String toString(){
+            return "Термостат использует дневной режим.";
+        }
+    }
+    // Пример метода action(), вставляющего новый экземпляр самого себя в список событий:
+    public class Bell extends Event{
+        public Bell(long delayTime){
+            super(delayTime);
+        }
+        public void action(){
+            addEvent(new Bell(delayTime));
+        }
+        public String toString(){
+            return "Бам";
+        }
+    }
+    public class Restart extends Event{
+        private Event[] eventList;
+        public Restart(long delayTime, Event[] eventList) {
+            super(delayTime);
+            this.eventList = eventList;
+            for (Event e :eventList)
+                addEvent(e);
+        }
+        public void action(){
+            for (Event e : eventList){
+                e.start();
+                addEvent(e);
+            }
+        }
+        public String toString(){
+            return "Перезапуск системы";
+        }
+    }
+    public static class Terminate extends Event{
+        public Terminate(long delayTime){
+            super(delayTime);
+        }
+        public void action(){
+            System.exit(0);
+        }
+        public String toString(){
+            return "Отключение";
+        }
+    }
 }
