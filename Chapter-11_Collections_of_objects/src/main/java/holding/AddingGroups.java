@@ -19,5 +19,9 @@ public class AddingGroups {
         for (Integer var: collection){
             System.out.println(var);
         }
+        //
+        for (Integer var: list){
+            System.out.println(var);
+        }
     }
 }
