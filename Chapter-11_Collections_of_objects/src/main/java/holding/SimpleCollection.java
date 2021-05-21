@@ -9,7 +9,7 @@ public class SimpleCollection {
         for (int i = 0; i < 10; i++)
             c.add(i); // автоматическая упаковка
         for (Integer i: c)
-            System.out.println(i + ", ");
+            System.out.print(i + ", ");
     }
 
 }
