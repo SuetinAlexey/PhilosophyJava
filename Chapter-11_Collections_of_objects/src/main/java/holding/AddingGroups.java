@@ -13,7 +13,6 @@ public class AddingGroups {
         // создает список на базе массива
         List<Integer> list = Arrays.asList(16,17,18,19,20);
         list.set(1,99); // ok - изменить внешний элемент
-        list.add(21);
         //
         for (Integer var: collection){
             System.out.println(var);
