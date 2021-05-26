@@ -25,6 +25,7 @@
         <module>Chapter-9_Interfaces</module>
         <module>Chapter-10_Inner_classes</module>
         <module>Chapter-11_Collections_of_objects</module>
+        <module>Chapter-14_Typeinfo</module>
     </modules>
 
     <properties>
